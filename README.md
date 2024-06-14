@@ -1,11 +1,4 @@
-## LGMRec (AAAI'24)
-
-This is the Pytorch implementation for our AAAI 2024 paper:
->Zhiqiang Guo, Jianjun Li, Guohui Li, Chaoyang Wang, Si Shi, Bin Ruan. LGMRec: Local and Global Graph Learning for Multimodal Recommendation. In AAAI 2024. [Paper](https://arxiv.org/abs/2312.16400)
-
-### Overview
-
-![Overview of MDGCF](img/framework.jpg)
+This is the Pytorch implementation for MambaFree
 
 ### Environment
 
@@ -19,16 +12,11 @@ The data contains text and image features extracted from Sentence-Transformers a
 ### Run
 
 1. Put your downloaded data (e.g. baby) under `data/` dir.
-2. Run `train.sh` to train LGMRec:
+2. Run `train.sh` to train MambaFree:
   `bash train.sh`
 You may specify other parameters in CMD or config with `configs/model/*.yaml` and `configs/dataset/*.yaml`.
 
-### Citation
+#### Acknowledgements
 
-    @inproceedings{guo2024lgmrec,
-    author = {Zhiqiang Guo, Jianjun Li, Guohui Li, Chaoyang Wang, Si Shi, Bin Ruan},
-    title = {LGMRec: Local and Global Graph Learning for Multimodal Recommendation},
-    booktitle = {Proceedings of AAAI 2024},
-    pages = {xxx},
-    year = {2024}
-    }
+Thanks Guo _et.al_ [LGMRec](https://github.com/georgeguo-cn/LGMRec),for their open source code.
+This code is also based on [MMRec](https://github.com/enoche/MMRec). Thank for their work.
