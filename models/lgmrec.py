@@ -270,7 +270,7 @@ class MambaLayer(nn.Module):
     def forward(self, input_tensor):
         hidden_states = self.mamba(input_tensor)
         if self.num_layers == 1:
-            hidden_states = self.LayerNorm(self.dropout(hidden_states))
+            hidden_states = self.dropout(hidden_states)
         else:  # Dual Residual Layer Normalizaiton
             # hidden_states = self.dropout(hidden_states)
             hidden_states = self.LayerNorm(self.dropout(hidden_states) + input_tensor)
