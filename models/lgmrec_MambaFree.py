@@ -126,7 +126,7 @@ class LGMRec(GeneralRecommender):
 
             item_feats = torch.unsqueeze(item_feats, 0)
             for i in range(self.num_layers):
-                self.mamba_layers[i](item_feats)
+                item_feats = self.mamba_layers[i](item_feats)
             item_feats = torch.squeeze(item_feats, 0)
 
         elif str == 't':
@@ -136,7 +136,7 @@ class LGMRec(GeneralRecommender):
 
             item_feats = torch.unsqueeze(item_feats, 0)
             for i in range(self.num_layers):
-                self.mamba_layers[i](item_feats)
+                item_feats = self.mamba_layers[i](item_feats)
             item_feats = torch.squeeze(item_feats, 0)
 
         user_feats = torch.sparse.mm(self.adj, item_feats) * self.num_inters[:self.n_users]
