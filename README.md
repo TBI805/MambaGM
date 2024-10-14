@@ -18,5 +18,5 @@ You may specify other parameters in CMD or config with `configs/model/*.yaml` an
 
 #### Acknowledgements
 
-Thanks Guo _et.al_ [LGMRec](https://github.com/georgeguo-cn/LGMRec),for their open source code.
+Thanks Zhou _et.al_ [FREEDOM](https://github.com/enoche/FREEDOM)),for their open source code.
 This code is also based on [MMRec](https://github.com/enoche/MMRec). Thanks for their work.
