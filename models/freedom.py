@@ -240,6 +240,8 @@ class FREEDOM(GeneralRecommender):
         if self.t_feat is not None:
 
             text_feats = self.text_trs(self.text_embedding.weight)
+
+            # MambaFree
             text_feats = torch.unsqueeze(text_feats, 0)
             for i in range(self.num_layers):
                 text_feats = self.mamba_layers[i](text_feats)
@@ -249,6 +251,8 @@ class FREEDOM(GeneralRecommender):
         if self.v_feat is not None:
 
             image_feats = self.image_trs(self.image_embedding.weight)
+
+            # MambaFree
             image_feats = torch.unsqueeze(image_feats, 0)
             for i in range(self.num_layers):
                 image_feats = self.mamba_layers[i](image_feats)
