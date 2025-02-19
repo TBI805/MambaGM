@@ -1,4 +1,4 @@
-This is the Pytorch implementation for MambaFR
+This is the Pytorch implementation for MambaGM
 
 ### Environment
 
