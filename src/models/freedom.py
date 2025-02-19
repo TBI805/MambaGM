@@ -251,7 +251,7 @@ class FREEDOM(GeneralRecommender):
 
             image_feats = self.image_trs(self.image_embedding.weight)
 
-            # MambaFR
+            # MambaGM
             image_feats = torch.unsqueeze(image_feats, 0)
             for i in range(self.num_layers):
                 image_feats = self.mamba_layers[i](image_feats)
