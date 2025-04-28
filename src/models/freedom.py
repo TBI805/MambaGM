@@ -240,7 +240,7 @@ class FREEDOM(GeneralRecommender):
 
             text_feats = self.text_trs(self.text_embedding.weight)
 
-            # MambaFR
+            # MambaGM
             text_feats = torch.unsqueeze(text_feats, 0)
             for i in range(self.num_layers):
                 text_feats = self.mamba_layers[i](text_feats)
