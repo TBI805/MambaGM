@@ -12,8 +12,8 @@ The data contains text and image features extracted from Sentence-Transformers a
 ### Run
 
 1. Put your downloaded data (e.g. baby) under `data/` dir.
-2. Run `train.sh` to train MambaFree:
-  `bash train.sh`
+2. Run `main.py` to train MambaGM:
+  `python main.py`
 You may specify other parameters in CMD or config with `configs/model/*.yaml` and `configs/dataset/*.yaml`.
 
 #### Acknowledgements
